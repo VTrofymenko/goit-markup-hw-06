@@ -276,6 +276,7 @@ body {
   transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
+  padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -312,6 +313,30 @@ body {
 .modal-button:focus .close-icon {
   fill: var(--hover-text-color);
 }
+
+.modal-title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--Primary-text-color);
+}
+
+.modal-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-label {
+  text-align: left;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+} 
 
 /* ----------------ABOUT---------------- */
 
@@ -748,4 +773,73 @@ body {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--hover-background-color)
+}
+
+.subscribe {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-weight: 900;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hover-text-color);
+}
+
+.subscribe-container {
+  padding-top: 72px;
+  margin-left: 93px;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: #2F303A;
+}
+
+.subscribe-input::placeholder {
+  padding-left: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  padding-left: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 12px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+  background-color: var(--hover-background-color);
+  color: var(--hover-text-color);
+  font-weight: 900;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  transform: var(--animation);
+}
+
+.subscribe-icon {
+  margin-left: 10px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  color: var(--hover-text-color);
+  background-color: #188CE8;
 }

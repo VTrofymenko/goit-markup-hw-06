@@ -63,6 +63,33 @@
                             </use>
                         </svg>
                     </button>
+                    <form action="">
+                        <fieldset>
+                            <legend class="modal-title">Оставьте свои данные, мы вам перезвоним</legend>
+                            <label class="modal-label"
+                            for="name">Имя
+                                <input class="modal-input"
+                                type="text" name="name" id="name">
+                            </label>
+                            <label class="modal-label"
+                            for="tel">
+                                Телефон
+                                <input class="modal-input"
+                                type="tel" name="tel" id="tel">
+                            </label>
+                            <label class="modal-label"
+                            for="email">
+                                Почта
+                                <input class="modal-input"
+                                type="email" name="email" id="email">
+                            </label>
+                            <label class="modal-label"
+                            for="comments">
+                                Комментарий
+                                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                            </label>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </section>
@@ -422,6 +449,26 @@
             </li>
         </ul>
     </div>
+    
+    
+    <div class="subscribe-container">
+        <b class="subscribe">Подпишитесь на рассылку</b>
+        <form class="subscribe-form" action="">
+            <label for="email">
+            </label>
+            <input 
+            name="email" 
+            class="subscribe-input" 
+            type="email"
+            placeholder="E-mail">
+
+            <button type="submit" class="subscribe-button">Подписаться
+                <svg class="subscribe-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-subscribe">
+                    </use>
+                </svg>
+            </button>
+        </form>
     </div>
     </footer>
     <script src="./js/modal.js"></script>

@@ -21,3 +21,11 @@ a {
 button {
     cursor: pointer;
 }
+
+input {
+    display: block;
+}
+
+fieldset {
+    border: none;
+}
